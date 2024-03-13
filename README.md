@@ -1,7 +1,7 @@
-**Name: Nguyen Thanh Toan LE (a1816586)** 
+**Name: Nguyen Thanh Toan LE** 
 
 # Introduction
-This assignment uses Java 8, providing communication between clients, aggregation servers.  
+Communication between clients, aggregation servers.  
 Aggregation server, client and content servers are provided in 2 mode: normal mode and testing mode.  
 In the normal mode, the client will send 1 GET request to the aggregation server then die, content server will send 1 PUT request then wait for 2 seconds then start sending heartbeat to aggregation server. Aggregation server in normal mode will run the server to listen to requests and also other works (e.g backup Lamport clock, FeedLog, FeedLog replications, etc). Therefore, in the normal mode, the content server and aggregation server will run forever until they're closed manually.  
 In the testing mode, the behaviour of client, aggregation server and content server will be different based on the test case. The behavior is defined in their main() method. Please read more information about test cases below.  
